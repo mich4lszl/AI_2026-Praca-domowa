@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kropla & Ziarno | Rzemieślnicza Kawa i Domowy Brewing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header" id="top">
+        <div class="container nav-wrapper">
+            <a href="#top" class="brand-logo" aria-label="Strona główna Kropla i Ziarno">
+                Kropla<span>&</span>Ziarno
+            </a>
+            <button class="mobile-menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Otwórz menu nawigacyjne">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="primary-nav" id="primaryNav" aria-label="Główna nawigacja">
+                <ul class="nav-list">
+                    <li><a href="#o-projekcie" class="nav-link">Filozofia</a></li>
+                    <li><a href="#metody" class="nav-link">Metody parzenia</a></li>
+                    <li><a href="#kalkulator" class="nav-link">Kalkulator dozy</a></li>
+                    <li><a href="#faq" class="nav-link">Pytania</a></li>
+                    <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
+                </ul>
+                <button class="theme-switch" id="themeToggle" type="button" aria-label="Zmień motyw kolorystyczny">
+                    <span class="theme-icon" id="themeIcon">◐</span>
+                    <span class="theme-label" id="themeLabel">Tryb nocny</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Rzemieślnicza kultura kawy specialty</p>
+                    <h1>Sztuka powolnego parzenia w domowym zaciszu.</h1>
+                    <p class="lead">
+                        Poznaj alternatywne metody ekstrakcji, zrozum wpływ temperatury oraz grubości przemiału na profil sensoryczny i zaparz filiżankę, która wydobędzie pełnię pochodzenia ziarna.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#kalkulator" class="btn btn-primary">Oblicz proporcje</a>
+                        <a href="#metody" class="btn btn-outline">Przeglądaj metody</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <figure class="image-frame">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=80" alt="Zbliżenie na nalewanie gorącej wody z konewki do szklanego drippera z kawą">
+                        <figcaption>Ręczne parzenie metodą przelewową pozwala na pełną kontrolę nad czasem ekstrakcji.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="philosophy-section" id="o-projekcie">
+            <div class="container">
+                <div class="section-header">
+                    <p class="eyebrow">01 / Fundamenty</p>
+                    <h2>Co decyduje o smaku w filiżance?</h2>
+                </div>
+                <div class="pillars-grid">
+                    <article class="pillar-card">
+                        <span class="pillar-number">I</span>
+                        <h3>Świeżość i jednorodność przemiału</h3>
+                        <p>Mielenie ziaren bezpośrednio przed parzeniem w młynku żarnowym gwarantuje równomierną ekstrakcję i zatrzymuje lotne związki aromatyczne wewnątrz naparu.</p>
+                    </article>
+                    <article class="pillar-card">
+                        <span class="pillar-number">II</span>
+                        <h3>Mineralizacja i temperatura wody</h3>
+                        <p>Woda stanowi ponad 98% przelewu. Optymalna temperatura mieści się w przedziale 90–96°C, zależnie od stopnia wypalenia oraz gęstości samego ziarna.</p>
+                    </article>
+                    <article class="pillar-card">
+                        <span class="pillar-number">III</span>
+                        <h3>Powtarzalna doza i czas kontaktu</h3>
+                        <p>Korzystanie z wagi z dokładnością do 0,1 grama oraz stopera pozwala odtworzyć idealny przepis za każdym razem i świadomie korygować kwasowość lub gorycz.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="methods-section" id="metody">
+            <div class="container">
+                <div class="section-header split-header">
+                    <div>
+                        <p class="eyebrow">02 / Przewodnik</p>
+                        <h2>Klasyczne metody alternatywne</h2>
+                    </div>
+                    <div class="filter-controls" role="group" aria-label="Filtruj metody parzenia">
+                        <button type="button" class="filter-btn active" data-filter="all">Wszystkie</button>
+                        <button type="button" class="filter-btn" data-filter="przelew">Przelewowe</button>
+                        <button type="button" class="filter-btn" data-filter="immersja">Immersyjne</button>
+                        <button type="button" class="filter-btn" data-filter="cisnienie">Ciśnieniowe</button>
+                    </div>
+                </div>
+
+                <div class="methods-grid" id="methodsGrid">
+                    <article class="method-card" data-category="przelew">
+                        <div class="card-media">
+                            <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80" alt="Dripper Hario V60 ustawiony na szklanym serwerze podczas parzenia kawy">
+                            <span class="badge">Przelew</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Hario V60</h3>
+                            <p>Stożkowy dripper ze spiralnymi żłobieniami. Daje niezwykle czysty, herbaciany napar z wyraźnie zaznaczoną kwasowością owocową i kwiatowym aromatem.</p>
+                            <ul class="spec-list">
+                                <li><strong>Proporcja:</strong> 6 g / 100 ml</li>
+                                <li><strong>Czas:</strong> 2:45 – 3:15 min</li>
+                                <li><strong>Przemiał:</strong> Średnio-drobny</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="method-card" data-category="przelew">
+                        <div class="card-media">
+                            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80" alt="Szklany zaparzacz Chemex z drewnianym kołnierzem na drewnianym blacie">
+                            <span class="badge">Przelew</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Chemex</h3>
+                            <p>Ikona wzornictwa przemysłowego. Grube papierowe filtry zatrzymują większość olejków kawowych, oferując aksamitną słodycz i niespotykaną klarowność.</p>
+                            <ul class="spec-list">
+                                <li><strong>Proporcja:</strong> 6.5 g / 100 ml</li>
+                                <li><strong>Czas:</strong> 3:30 – 4:30 min</li>
+                                <li><strong>Przemiał:</strong> Średnio-gruby</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="method-card" data-category="immersja">
+                        <div class="card-media">
+                            <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80" alt="Przygotowywanie kawy w zaparzaczu AeroPress z użyciem wagi baristycznej">
+                            <span class="badge">Immersja</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>AeroPress</h3>
+                            <p>Wszechstronny zaparzacz tłokowy łączący pełne zanurzenie z przeciskaniem przez filtr. Pozwala uzyskać zarówno lekki przelew, jak i gęsty koncentrat.</p>
+                            <ul class="spec-list">
+                                <li><strong>Proporcja:</strong> 6.5 g / 100 ml</li>
+                                <li><strong>Czas:</strong> 1:45 – 2:15 min</li>
+                                <li><strong>Przemiał:</strong> Średni</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="method-card" data-category="immersja">
+                        <div class="card-media">
+                            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Filiżanka gęstej kawy zaparzonej metodą French Press na jasnym stole">
+                            <span class="badge">Immersja</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>French Press</h3>
+                            <p>Klasyczny dzbanek z metalowym sitkiem. Brak papierowego filtra sprawia, że napar ma wysokie body, kremową teksturę i głęboki, czekoladowo-orzechowy profil.</p>
+                            <ul class="spec-list">
+                                <li><strong>Proporcja:</strong> 6.5 g / 100 ml</li>
+                                <li><strong>Czas:</strong> 4:00 min (+ odczekanie)</li>
+                                <li><strong>Przemiał:</strong> Gruby</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="method-card" data-category="cisnienie">
+                        <div class="card-media">
+                            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80" alt="Stalowa kawiarka Moka stojąca obok świeżo wypalonych ziaren kawy">
+                            <span class="badge">Ciśnienie</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Kawiarka (Moka)</h3>
+                            <p>Tradycyjny włoski czajniczek ciśnieniowy. Wlewając już podgrzaną wodę do dolnego zbiornika, unikniesz przegrzania drobinek i uzyskasz gęsty, słodki napar.</p>
+                            <ul class="spec-list">
+                                <li><strong>Proporcja:</strong> 10 g / 100 ml</li>
+                                <li><strong>Czas:</strong> ok. 2:30 min</li>
+                                <li><strong>Przemiał:</strong> Drobny</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="method-card" data-category="przelew">
+                        <div class="card-media">
+                            <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=80" alt="Zestaw do parzenia kawy przelewowej Kalita z falistym filtrem papierowym">
+                            <span class="badge">Przelew</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Kalita Wave</h3>
+                            <p>Dripper z płaskim dnem i trzema otworami odpływowymi. Wybacza drobne błędy w technice polewania, zapewniając zbalansowany i pełny w smaku przelew.</p>
+                            <ul class="spec-list">
+                                <li><strong>Proporcja:</strong> 6 g / 100 ml</li>
+                                <li><strong>Czas:</strong> 3:00 – 3:30 min</li>
+                                <li><strong>Przemiał:</strong> Średni</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="calculator-section" id="kalkulator">
+            <div class="container">
+                <div class="calculator-box">
+                    <div class="calc-intro">
+                        <p class="eyebrow">03 / Narzędzie baristy</p>
+                        <h2>Interaktywny kalkulator proporcji</h2>
+                        <p>Wybierz metodę, określ docelową ilość naparu i dostosuj intensywność. Kalkulator automatycznie przeliczy dokładną dozę ziaren oraz ilość wody potrzebną do preinfuzji (tzw. bloomingu).</p>
+                        <div class="external-resources">
+                            <p class="small-label">Przydatne źródła zewnętrzne:</p>
+                            <a href="https://sca.coffee/research/coffee-standards" target="_blank" rel="noopener noreferrer" class="ext-link">Standardy parzenia Specialty Coffee Association (SCA) ↗</a>
+                            <a href="https://worldcoffeeresearch.org/" target="_blank" rel="noopener noreferrer" class="ext-link">Baza odmian botanicznych World Coffee Research ↗</a>
+                        </div>
+                    </div>
+
+                    <div class="calc-interface">
+                        <div class="form-group">
+                            <label for="brewMethod">Wybierz metodę parzenia</label>
+                            <select id="brewMethod" class="form-control">
+                                <option value="6.0" data-temp="93°C" data-grind="Średnio-drobny (22–24 kliknięcia)">Hario V60 / Kalita (6.0g / 100ml)</option>
+                                <option value="6.5" data-temp="94°C" data-grind="Średnio-gruby (26–28 kliknięć)">Chemex (6.5g / 100ml)</option>
+                                <option value="6.5" data-temp="88–92°C" data-grind="Średni (20–24 kliknięcia)">AeroPress (6.5g / 100ml)</option>
+                                <option value="7.0" data-temp="95°C" data-grind="Gruby (28–32 kliknięcia)">French Press (7.0g / 100ml)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="range-header">
+                                <label for="waterAmount">Ilość wody (ml)</label>
+                                <output id="waterOutput" for="waterAmount">300 ml</output>
+                            </div>
+                            <input type="range" id="waterAmount" min="150" max="1000" step="25" value="300" class="range-slider">
+                            <div class="range-marks">
+                                <span>150 ml (1 filiżanka)</span>
+                                <span>500 ml (serwer)</span>
+                                <span>1000 ml (dzbanek)</span>
+                            </div>
+                        </div>
+
+                        <div class="calc-results" aria-live="polite">
+                            <div class="result-item">
+                                <span class="result-label">Doza kawy</span>
+                                <strong class="result-value" id="coffeeDose">18.0 g</strong>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Woda do preinfuzji (35 s)</span>
+                                <strong class="result-value" id="bloomWater">54 ml</strong>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Zalecana temp.</span>
+                                <strong class="result-value" id="recTemp">93°C</strong>
+                            </div>
+                            <div class="result-item full-width">
+                                <span class="result-label">Sugerowane ustawienie młynka</span>
+                                <strong class="result-value text-sm" id="recGrind">Średnio-drobny (22–24 kliknięcia)</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <p class="eyebrow">04 / Baza wiedzy</p>
+                    <h2>Często zadawane pytania</h2>
+                </div>
+                <div class="accordion-list">
+                    <div class="accordion-item">
+                        <button class="accordion-trigger" type="button" aria-expanded="false">
+                            <span>Dlaczego moja kawa przelewowa wychodzi gorzka i cierpka?</span>
+                            <span class="acc-icon">+</span>
+                        </button>
+                        <div class="accordion-content" hidden>
+                            <p>Zbyt wysoka gorycz i suchość na języku to najczęściej oznaka nadekstrakcji. Spróbuj zmielić kawę o 2–3 stopnie grubiej, obniżyć temperaturę wody o 2°C lub skrócić całkowity czas przelewania poprzez nieco szybsze wlewanie wody.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-trigger" type="button" aria-expanded="false">
+                            <span>Po co przelewa się papierowy filtr wrzątkiem przed parzeniem?</span>
+                            <span class="acc-icon">+</span>
+                        </button>
+                        <div class="accordion-content" hidden>
+                            <p>Przelanie filtra gorącą wodą spełnia dwie funkcje: wypłukuje celulozowy posmak papieru, który mógłby przejść do naparu, oraz rozgrzewa ścianki drippera i serwera, dzięki czemu temperatura podczas ekstrakcji pozostaje stabilna.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-trigger" type="button" aria-expanded="false">
+                            <span>Czym różni się obróbka ziarna myta (Washed) od naturalnej (Natural)?</span>
+                            <span class="acc-icon">+</span>
+                        </button>
+                        <div class="accordion-content" hidden>
+                            <p>W obróbce mytej miąższ owocu kawowca jest usuwany przed suszeniem, co daje bardzo czysty profil, wyższą kwasowość cytrusową i kwiatowe nuty. W obróbce naturalnej ziarna schną w całym owocu na słońcu, zyskując gęste body i wyraźną słodycz dojrzałych owoców leśnych.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="kontakt">
+            <div class="container contact-grid">
+                <div class="contact-info">
+                    <p class="eyebrow">05 / Społeczność</p>
+                    <h2>Podziel się swoim przepisem</h2>
+                    <p>Masz sprawdzoną recepturę na przelew albo szukasz ziaren o konkretnym profilu sensorycznym? Napisz do nas – chętnie wymienimy się doświadczeniami.</p>
+                    <ul class="contact-details">
+                        <li><strong>Lokalizacja:</strong> Lublin, Polska</li>
+                        <li><strong>Godziny warsztatów:</strong> Sobota, 10:00 – 15:00</li>
+                        <li><strong>Repozytorium:</strong> <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub Project Repository ↗</a></li>
+                    </ul>
+                </div>
+
+                <form class="contact-form" id="recipeForm" novalidate>
+                    <div class="form-field">
+                        <label for="userName">Twoje imię</label>
+                        <input type="text" id="userName" name="userName" placeholder="np. Michał" required>
+                        <span class="error-msg" id="nameError"></span>
+                    </div>
+                    <div class="form-field">
+                        <label for="userEmail">Adres e-mail</label>
+                        <input type="email" id="userEmail" name="userEmail" placeholder="twoj@email.pl" required>
+                        <span class="error-msg" id="emailError"></span>
+                    </div>
+                    <div class="form-field">
+                        <label for="userMessage">Wiadomość lub Twój przepis</label>
+                        <textarea id="userMessage" name="userMessage" rows="4" placeholder="Opisz metodę, dozę i pochodzenie ziarna..." required></textarea>
+                        <span class="error-msg" id="messageError"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-btn">Wyślij wiadomość</button>
+                    <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="brand-logo">Kropla<span>&</span>Ziarno</span>
+                <p>Projekt edukacyjno-hobbystyczny poświęcony kulturze kawy specialty. Wykonany zgodnie ze standardami HTML5, CSS3 oraz ES6 JavaScript.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#o-projekcie">Filozofia</a>
+                <a href="#metody">Metody</a>
+                <a href="#kalkulator">Kalkulator</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <p class="copyright">&copy; 2026 Kropla & Ziarno. Wszystkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Wróć na samą górę strony">
+        ↑
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
